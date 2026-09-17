@@ -2,23 +2,24 @@
 
 # Oscar Zhu
 
-I study Mathematical Sciences and Financial Engineering at Washington University in St. Louis. I build native Mac apps, quantitative software, and focused Linux diagnostic tools.
+I build software at the boundary of **machine learning reliability, quantitative decision-making, and native Apple/Linux tools**. I study Mathematical Sciences and Financial Engineering at Washington University in St. Louis.
 
 [Portfolio](https://zhuhroscar-tech.github.io) · [LinkedIn](https://www.linkedin.com/in/huairuizhu/)
 
-## Selected projects
+## Start here
 
-- [ItoCanvas](https://github.com/zhuhroscar-tech/ItoCanvas) — an offline macOS options laboratory for Black–Scholes–Merton pricing, Greeks, implied volatility, strategies, and scenarios.
-- [DualTyper](https://github.com/zhuhroscar-tech/dualTyper) — a menu-bar translator for selected text using Apple's on-device Translation framework.
-- [privaudit](https://github.com/zhuhroscar-tech/privaudit) — local microphone and camera access history for Linux using PipeWire.
-- [reboot-safety-check](https://github.com/zhuhroscar-tech/reboot-safety-check) — checks DKMS module risks before rebooting into a newer kernel.
-- [trim-doctor](https://github.com/zhuhroscar-tech/trim-doctor) — checks the SSD TRIM/discard path through device, encryption, and storage layers.
-- [unmount-doctor](https://github.com/zhuhroscar-tech/unmount-doctor) — explains which processes are keeping a Linux mount busy.
-- [zram-doctor](https://github.com/zhuhroscar-tech/zram-doctor) — compares zram configuration with running devices.
-- [usbsmart-doctor](https://github.com/zhuhroscar-tech/usbsmart-doctor) — helps select a USB bridge's `smartctl` device type and report drive health.
+- [**ItoCanvas**](https://github.com/zhuhroscar-tech/ItoCanvas) — offline macOS options laboratory for Black–Scholes–Merton pricing, Greeks, implied volatility, strategies, and scenario analysis.
+- [**DualTyper**](https://github.com/zhuhroscar-tech/dualTyper) — privacy-first macOS menu-bar translation for explicitly selected text, using Apple’s on-device Translation framework.
+- [**numguard**](https://github.com/zhuhroscar-tech/numguard) — high-precision checks for numerical ML kernels, with independent reference calculations and adversarial fixtures.
+- [**qdrift**](https://github.com/zhuhroscar-tech/qdrift) — exact-oracle checks for affine INT8 quantization arithmetic and round-boundary drift.
+- [**recallwatch**](https://github.com/zhuhroscar-tech/recallwatch) — detects tail-query recall collapse in approximate-nearest-neighbor indexes.
+- [**privaudit**](https://github.com/zhuhroscar-tech/privaudit) — local Linux microphone and camera access history built on PipeWire.
 
-## How I build
+## What I care about
 
-I prefer local processing where practical, tests for numerical and failure-prone behavior, and documentation that states limitations. Each project's README covers its own setup and safety boundaries.
+- Numerical correctness, silent failure detection, and reproducible ML experiments.
+- Tools that work offline, explain their limits, and fail safely.
+- macOS and Linux behavior verified on the operating system where it matters.
+- Small, focused software with real tests rather than claims of completeness.
 
-I'm exploring the overlap between software, markets, and decision-making, and am open to internship conversations in software engineering, quantitative finance, and analytical product work.
+Each project README contains installation instructions, examples, verification status, and known limitations. I’m open to conversations about software engineering, quantitative finance, ML infrastructure, and analytical product work.
