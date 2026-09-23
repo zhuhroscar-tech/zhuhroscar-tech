@@ -42,10 +42,7 @@ CLI tools that answer "why won't this unmount / eject / back up" with real evide
 
 | Project | What it does |
 |---|---|
-| [mac-dmg-doctor](https://github.com/zhuhroscar-tech/mac-dmg-doctor) | Diagnoses busy mountpoints and DMG/sparse-image unmount blockers. |
-| [mac-tm-doctor](https://github.com/zhuhroscar-tech/mac-tm-doctor) | Investigates why a Time Machine destination or external volume is still "in use." |
-| [mac-tm-snapshot-doctor](https://github.com/zhuhroscar-tech/mac-tm-snapshot-doctor) | Inspects Time Machine local snapshots and backup-blocker state. |
-| [mac-spotlight-doctor](https://github.com/zhuhroscar-tech/mac-spotlight-doctor) | Investigates open file handles and Spotlight indexing state when a volume won't eject. |
+| [mac-volume-doctor](https://github.com/zhuhroscar-tech/mac-volume-doctor) | Unified macOS volume diagnostics for Time Machine destinations, local snapshots, Spotlight indexing, and busy DMG/sparse-image mountpoints. |
 
 ## 🐧 System diagnostics — Linux
 
@@ -84,9 +81,6 @@ Independent oracles and guards for real, reproducible bugs in NumPy/PyTorch/toke
 | [bytelevel-guard](https://github.com/zhuhroscar-tech/bytelevel-guard) | Detects ByteLevel-BPE added-token decode corruption before it ships. |
 | [causality-audit](https://github.com/zhuhroscar-tech/causality-audit) | Two-forward-pass prefix-invariance (causal-leakage) audit for sequence-model layers. |
 | [starveguard](https://github.com/zhuhroscar-tech/starveguard) | Simulates and audits priority-queue scheduler starvation (models a real vLLM bug). |
-| [torch-optim-introspection-guard](https://github.com/zhuhroscar-tech/torch-optim-introspection-guard) | Detects and works around a PyTorch `get_optimizer_state_dict()` step-counter mutation bug. |
-| [torch-take-along-dim-oob-guard](https://github.com/zhuhroscar-tech/torch-take-along-dim-oob-guard) | Guards `torch.take_along_dim` silently wrapping out-of-bounds indices instead of raising. |
-| [torch-numpy-stream-shuffle-guard](https://github.com/zhuhroscar-tech/torch-numpy-stream-shuffle-guard) | Guards `torch._numpy.random.shuffle` silently no-op'ing under Dynamo's NumPy random stream mode. |
 
 ## 🛠 Developer & agent tooling
 

@@ -42,10 +42,7 @@
 
 | 项目 | 功能 |
 |---|---|
-| [mac-dmg-doctor](https://github.com/zhuhroscar-tech/mac-dmg-doctor) | 诊断繁忙挂载点和 DMG/稀疏映像卸载阻塞问题。 |
-| [mac-tm-doctor](https://github.com/zhuhroscar-tech/mac-tm-doctor) | 排查为什么 Time Machine 备份目标盘或外接卷一直显示"使用中"。 |
-| [mac-tm-snapshot-doctor](https://github.com/zhuhroscar-tech/mac-tm-snapshot-doctor) | 检查 Time Machine 本地快照和备份阻塞状态。 |
-| [mac-spotlight-doctor](https://github.com/zhuhroscar-tech/mac-spotlight-doctor) | 排查卷无法弹出时的打开文件句柄和 Spotlight 索引状态。 |
+| [mac-volume-doctor](https://github.com/zhuhroscar-tech/mac-volume-doctor) | 统一的 macOS 卷诊断工具，覆盖 Time Machine 目标盘、本地快照、Spotlight 索引、DMG/稀疏映像繁忙挂载点。 |
 
 ## 🐧 系统诊断 — Linux
 
@@ -84,9 +81,6 @@
 | [bytelevel-guard](https://github.com/zhuhroscar-tech/bytelevel-guard) | 在上线前检测 ByteLevel-BPE 新增 token 的解码损坏风险。 |
 | [causality-audit](https://github.com/zhuhroscar-tech/causality-audit) | 针对序列模型层的双次前向传播前缀不变性（因果泄漏）审计。 |
 | [starveguard](https://github.com/zhuhroscar-tech/starveguard) | 模拟并审计优先队列调度器的饥饿问题（对应一个真实的 vLLM bug）。 |
-| [torch-optim-introspection-guard](https://github.com/zhuhroscar-tech/torch-optim-introspection-guard) | 检测并规避 PyTorch `get_optimizer_state_dict()` 的 step 计数器被意外修改的 bug。 |
-| [torch-take-along-dim-oob-guard](https://github.com/zhuhroscar-tech/torch-take-along-dim-oob-guard) | 防护 `torch.take_along_dim` 静默包裹越界索引而不报错的问题。 |
-| [torch-numpy-stream-shuffle-guard](https://github.com/zhuhroscar-tech/torch-numpy-stream-shuffle-guard) | 防护 Dynamo 的 NumPy random stream 模式下 `torch._numpy.random.shuffle` 静默空操作的问题。 |
 
 ## 🛠 开发者与 Agent 工具
 
