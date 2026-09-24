@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 README_FILES = (ROOT / "README.md", ROOT / "README.zh-CN.md")
+LICENSE_FILE = ROOT / "LICENSE"
 
 ARCHIVED_CONSOLIDATION_MEMBERS = {
     "mac-dmg-doctor",
@@ -52,6 +53,12 @@ class ProfileReadmeContractTests(unittest.TestCase):
             with self.subTest(readme=name):
                 self.assertIn("README.md", markdown, f"{name} should link the English README")
                 self.assertIn("README.zh-CN.md", markdown, f"{name} should link the Simplified Chinese README")
+
+    def test_repository_has_clear_mit_license(self) -> None:
+        self.assertTrue(LICENSE_FILE.exists(), "profile repo should include a LICENSE file")
+        license_text = LICENSE_FILE.read_text(encoding="utf-8")
+        self.assertIn("MIT License", license_text)
+        self.assertIn("Copyright (c) 2026 Oscar Zhu", license_text)
 
 
 if __name__ == "__main__":
