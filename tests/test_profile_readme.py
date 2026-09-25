@@ -7,6 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README_FILES = (ROOT / "README.md", ROOT / "README.zh-CN.md")
 LICENSE_FILE = ROOT / "LICENSE"
+CHANGELOG_FILE = ROOT / "CHANGELOG.md"
+WORKFLOW_FILE = ROOT / ".github" / "workflows" / "validate.yml"
 
 ARCHIVED_CONSOLIDATION_MEMBERS = {
     "mac-dmg-doctor",
@@ -59,6 +61,25 @@ class ProfileReadmeContractTests(unittest.TestCase):
         license_text = LICENSE_FILE.read_text(encoding="utf-8")
         self.assertIn("MIT License", license_text)
         self.assertIn("Copyright (c) 2026 Oscar Zhu", license_text)
+
+    def test_readmes_link_release_history_and_license(self) -> None:
+        for name, markdown in _readmes().items():
+            with self.subTest(readme=name):
+                self.assertIn("CHANGELOG.md", markdown, f"{name} should link release history")
+                self.assertIn("LICENSE", markdown, f"{name} should link the license")
+
+    def test_changelog_documents_current_release(self) -> None:
+        self.assertTrue(CHANGELOG_FILE.exists(), "profile repo should include a CHANGELOG")
+        changelog = CHANGELOG_FILE.read_text(encoding="utf-8")
+        self.assertIn("## v0.1.2", changelog)
+        self.assertIn("## v0.1.1", changelog)
+        self.assertIn("## v0.1.0", changelog)
+
+    def test_validation_workflow_runs_for_release_tags(self) -> None:
+        workflow = WORKFLOW_FILE.read_text(encoding="utf-8")
+        self.assertIn("branches: [main]", workflow)
+        self.assertIn("tags:", workflow)
+        self.assertIn("'v*'", workflow)
 
 
 if __name__ == "__main__":
