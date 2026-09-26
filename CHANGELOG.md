@@ -2,6 +2,11 @@
 
 All notable changes to this profile repository are documented here.
 
+## v0.1.3 — 2026-09-26
+
+- Corrected the profile academic-program wording to Mathematics and Financial Engineering in both English and Simplified Chinese.
+- Added repository-contract coverage so the stale Mathematical Sciences wording does not return.
+
 ## v0.1.2 — 2026-09-25
 
 - Added release-history links to the English and Simplified Chinese profile READMEs.

@@ -2,7 +2,7 @@
 
 # Oscar Zhu
 
-我开发位于**机器学习可靠性、量化决策和原生 Apple/Linux 工具交叉点**的软件。目前在圣路易斯华盛顿大学学习数学科学与金融工程。
+我开发位于**机器学习可靠性、量化决策和原生 Apple/Linux 工具交叉点**的软件。目前在圣路易斯华盛顿大学学习数学与金融工程。
 
 [个人网站](https://zhuhroscar-tech.github.io) · [LinkedIn](https://www.linkedin.com/in/huairuizhu/) · [发布历史](CHANGELOG.md) · [许可证](LICENSE)
 

@@ -2,7 +2,7 @@
 
 # Oscar Zhu
 
-I build software at the boundary of **machine learning reliability, quantitative decision-making, and native Apple/Linux tools**. I study Mathematical Sciences and Financial Engineering at Washington University in St. Louis.
+I build software at the boundary of **machine learning reliability, quantitative decision-making, and native Apple/Linux tools**. I study Mathematics and Financial Engineering at Washington University in St. Louis.
 
 [Portfolio](https://zhuhroscar-tech.github.io) · [LinkedIn](https://www.linkedin.com/in/huairuizhu/) · [Release history](CHANGELOG.md) · [License](LICENSE)
 

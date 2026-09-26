@@ -68,9 +68,19 @@ class ProfileReadmeContractTests(unittest.TestCase):
                 self.assertIn("CHANGELOG.md", markdown, f"{name} should link release history")
                 self.assertIn("LICENSE", markdown, f"{name} should link the license")
 
+    def test_profile_uses_current_academic_program_copy(self) -> None:
+        english = (ROOT / "README.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
+
+        self.assertIn("Mathematics and Financial Engineering", english)
+        self.assertNotIn("Mathematical Sciences", english)
+        self.assertIn("数学与金融工程", chinese)
+        self.assertNotIn("数学科学与金融工程", chinese)
+
     def test_changelog_documents_current_release(self) -> None:
         self.assertTrue(CHANGELOG_FILE.exists(), "profile repo should include a CHANGELOG")
         changelog = CHANGELOG_FILE.read_text(encoding="utf-8")
+        self.assertIn("## v0.1.3", changelog)
         self.assertIn("## v0.1.2", changelog)
         self.assertIn("## v0.1.1", changelog)
         self.assertIn("## v0.1.0", changelog)
